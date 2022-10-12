@@ -1,7 +1,7 @@
 public class StackNodeList {
 
-    Node top;
-    int num_items = 0;
+    public Node top;
+    private int num_items = 0;
 
 
     public StackNodeList() {
@@ -13,6 +13,11 @@ public class StackNodeList {
     public StackNodeList(Node top) {
 
         this.top = top;
+        Node node = this.top;
+        while (node != null) {
+            this.num_items++;
+            node = node.next;
+        }
 
     }
 
