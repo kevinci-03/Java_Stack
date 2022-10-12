@@ -1,3 +1,7 @@
+/**
+ * Implements a Node List for use in Stack
+ */
+
 public class Node {
 
 	public int data;
