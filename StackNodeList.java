@@ -1,3 +1,7 @@
+/**
+ * Implement an efficient last in first out Abstract Data Type using a Node list
+ */
+
 public class StackNodeList {
 
     public Node top;
@@ -21,20 +25,20 @@ public class StackNodeList {
 
     }
 
-    public boolean isEmpty() {
+    public boolean isEmpty() { // Time Complexity: O(1)
 
         return this.top == null;
 
     }
 
-    public void push(int value) {
+    public void push(int value) {  // Time Complexity: O(1)
 
         this.top = new Node(value);
         this.num_items++;
 
     }
 
-    public int pop() {
+    public int pop() {  // Time Complexity: O(1)
 
         if (this.isEmpty()) {
             throw new IndexOutOfBoundsException("Stack UnderFlow!");
@@ -46,7 +50,7 @@ public class StackNodeList {
 
     }
 
-    public int peek() {
+    public int peek() {  // Time Complexity: O(1)
 
         if (this.isEmpty()) {
             throw new IndexOutOfBoundsException("Stack UnderFlow!");
@@ -55,7 +59,7 @@ public class StackNodeList {
 
     }
 
-    public int size() {
+    public int size() {  // Time Complexity: O(1)
 
         return this.num_items;
 

@@ -3,13 +3,12 @@ import java.util.*;
 
 import org.junit.Test;
 
-
 public class StackNodeListTests {
 
 	public static final double DELTA = 0.00001;
 
 	@Test
-	public void is_empty1() {
+	public void is_empty1() { 
 		StackNodeList stack = new StackNodeList();
 		assertTrue(stack.isEmpty());
 	}
