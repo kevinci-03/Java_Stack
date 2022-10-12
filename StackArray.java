@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+/** 
+ * Aims to implement an efficient last in first out Abstract Data Type using an ArrayList and generic types 
+*/
 
 public class StackArray<T> {
 
@@ -20,19 +23,19 @@ public class StackArray<T> {
 
     }
 
-    public boolean isEmpty() {
+    public boolean isEmpty() {  // Time Complexity: O(1)
 
         return this.num_items == 0;
 
     }
 
-    public boolean isFull() {
+    public boolean isFull() {  // Time Complexity: O(1)
 
         return this.num_items == this.capacity;
 
     }
 
-    public void push(T item) {
+    public void push(T item) {  // Time Complexity: O(1)
 
         if (this.isFull()) {
             throw new IndexOutOfBoundsException("Stack OverFlow!");
@@ -42,7 +45,7 @@ public class StackArray<T> {
 
     }
 
-    public T pop() {
+    public T pop() {  // Time Complexity: O(1)
 
         if (this.isEmpty()) {
             throw new IndexOutOfBoundsException("Stack UnderFlow!");
@@ -53,7 +56,7 @@ public class StackArray<T> {
 
     }
 
-    public T peek() {
+    public T peek() {  // Time Complexity: O(1)
 
         if (this.isEmpty()) {
             throw new IndexOutOfBoundsException("Stack UnderFlow!");
@@ -62,7 +65,7 @@ public class StackArray<T> {
 
     }
 
-    public int size() {
+    public int size() {  // Time Complexity: O(1)
 
         return this.num_items;
 
